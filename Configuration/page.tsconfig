@@ -1,0 +1,17 @@
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "Text"
+  text {
+    // header = LLL:EXT:ucph_ce_quote/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_wizard_tab
+    elements {
+      ucph_ce_quote {
+        iconIdentifier = ucph_ce_quote_icon
+        title = LLL:EXT:ucph_ce_quote/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_title
+        description = LLL:EXT:ucph_ce_quote/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_desc
+        tt_content_defValues {
+          CType = ucph_ce_quote
+        }
+      }
+    }
+    show := addToList(ucph_ce_quote)
+  }
+}

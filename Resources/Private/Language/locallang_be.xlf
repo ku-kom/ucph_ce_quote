@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_ce_quote/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_ce_quote">
+        <header>
+            <authorName>Nanna Ellegaard</authorName>
+            <authorEmail>nel@adm.ku.dk</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="ucph_ce_quote_title">
+            <source>Quote</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_quote_desc">
+            <source>Insert quotation</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_quote_name">
+            <source>Name (not visible in the frontend)</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_quote_link">
+            <source>Quote Link</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_quote_source">
+            <source>Quote source</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_quote_text">
+            <source>Quote text</source>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,16 @@
+tt_content.ucph_ce_quote >
+# CTYPE: Quote
+
+tt_content.ucph_ce_quote =< lib.contentElement
+tt_content.ucph_ce_quote {
+	templateName = Quote
+	templateRootPaths {
+        101 = EXT:ucph_ce_quote/Resources/Private/Templates/
+    }
+    partialRootPaths {
+        101 = EXT:ucph_ce_quote/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        101 = EXT:ucph_ce_quote/Resources/Private/Layouts/
+    }
+}
