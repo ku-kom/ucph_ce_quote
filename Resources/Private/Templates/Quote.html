@@ -2,12 +2,16 @@
 <f:layout name="Default" />
 <f:section name="Main">
     <div id="c{data.uid}" class="{data.CType}">
-        <blockquote cite="{f:uri.typolink(parameter: data.quote_link)}">
-            <p>{data.bodytext}</p>
+        <figure class="{data.quote_alignment}">
+            <blockquote class="blockquote" cite="{f:uri.typolink(parameter: data.quote_link)}">
+                <p>{data.bodytext}</p>
+            </blockquote>
             <f:if condition="{data.quote_source}">
-                <footer><f:link.typolink parameter="{data.quote_link}">{data.quote_source}</f:link.typolink></footer>
+                <figcaption class="blockquote-footer">
+                    <f:link.typolink parameter="{data.quote_link}">{data.quote_source}</f:link.typolink>
+                </figcaption>
             </f:if>
-        </blockquote>
+        </figure>
 </f:section>
 
 </html>
