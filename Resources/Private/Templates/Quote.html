@@ -1,17 +1,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <f:section name="Main">
-    <div id="c{data.uid}" class="{data.CType}">
-        <figure class="{data.quote_alignment}">
-            <blockquote class="blockquote" cite="{f:uri.typolink(parameter: data.quote_link)}">
-                <p>{data.bodytext}</p>
-            </blockquote>
-            <f:if condition="{data.quote_source}">
-                <figcaption class="blockquote-footer">
-                    <f:link.typolink parameter="{data.quote_link}">{data.quote_source}</f:link.typolink>
-                </figcaption>
-            </f:if>
-        </figure>
+    <figure class="{data.quote_alignment}">
+        <blockquote class="blockquote" cite="{f:uri.typolink(parameter: data.quote_link)}">
+            <p>{data.bodytext}</p>
+        </blockquote>
+        <f:if condition="{data.quote_source}">
+            <figcaption class="blockquote-footer">
+                <f:link.typolink parameter="{data.quote_link}">{data.quote_source}</f:link.typolink>
+            </figcaption>
+        </f:if>
+    </figure>
 </f:section>
 
 </html>
