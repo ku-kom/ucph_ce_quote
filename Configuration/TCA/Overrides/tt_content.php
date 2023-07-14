@@ -63,6 +63,7 @@ call_user_func(function ($extKey ='ucph_ce_quote', $contentType ='ucph_ce_quote'
         $GLOBALS['TCA']['tt_content']['columns'],
         [
             'quote_source' => [
+                'exclude' => true,
                 'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_source',
                 'config' => [
                     'type' => 'input',
@@ -90,6 +91,7 @@ call_user_func(function ($extKey ='ucph_ce_quote', $contentType ='ucph_ce_quote'
                 ]
             ],
             'quote_alignment' => [
+                'exclude' => true,
                 'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment',
                 'config' => [
                     'type' => 'select',
