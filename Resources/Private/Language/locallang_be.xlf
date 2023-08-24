@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="EXT:ucph_ce_quote/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_ce_quote">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_content_quote/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_content_quote">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-        <trans-unit id="ucph_ce_quote_title">
+        <trans-unit id="ucph_content_quote_title">
             <source>Quote</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_desc">
+        <trans-unit id="ucph_content_quote_desc">
             <source>Insert quotation</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_name">
+        <trans-unit id="ucph_content_quote_name">
             <source>Name (not visible in the frontend)</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_link">
+        <trans-unit id="ucph_content_tx_ucph_content_quote_link">
             <source>Quote Link</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_source">
+        <trans-unit id="ucph_content_tx_ucph_content_quote_source">
             <source>Quote source</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_text">
+        <trans-unit id="ucph_content_quote_text">
             <source>Quote text</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_alignment">
+        <trans-unit id="ucph_content_tx_ucph_content_quote_alignment">
             <source>Quote alignment</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_alignment_left">
+        <trans-unit id="ucph_content_tx_ucph_content_quote_alignment_left">
             <source>Left (default)</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_alignment_center">
+        <trans-unit id="ucph_content_tx_ucph_content_quote_alignment_center">
             <source>Center</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_quote_alignment_right">
+        <trans-unit id="ucph_content_tx_ucph_content_quote_alignment_right">
             <source>Right</source>
         </trans-unit>
         </body>

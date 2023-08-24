@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the package ucph_ce_quote.
+ * This file is part of the package ucph_content_quote.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  * University of Copenhagen.
@@ -9,16 +9,16 @@
 declare(strict_types=1);
 defined('TYPO3') or die();
 
-call_user_func(function ($extKey ='ucph_ce_quote', $contentType ='ucph_ce_quote') {
+call_user_func(function ($extKey ='ucph_content_quote', $contentType ='ucph_content_quote') {
     // Adds the content element to the "Type" dropdown
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
         'CType',
         [
-            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_title',
+            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_quote_title',
             $contentType,
             // icon identifier
-            'ucph_ce_quote_icon',
+            'ucph_content_quote_icon',
         ],
         'ucph_ce_text',
         'after'
@@ -37,10 +37,10 @@ call_user_func(function ($extKey ='ucph_ce_quote', $contentType ='ucph_ce_quote'
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
-                quote_link;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_link,
-                quote_source;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_source,
-                bodytext;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_text,
-                quote_alignment;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment,
+                tx_ucph_content_quote_link;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_link,
+                tx_ucph_content_quote_source;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_source,
+                bodytext;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_quote_text,
+                tx_ucph_content_quote_alignment;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_alignment,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
@@ -62,18 +62,18 @@ call_user_func(function ($extKey ='ucph_ce_quote', $contentType ='ucph_ce_quote'
     $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
         $GLOBALS['TCA']['tt_content']['columns'],
         [
-            'quote_source' => [
+            'tx_ucph_content_quote_source' => [
                 'exclude' => true,
-                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_source',
+                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_source',
                 'config' => [
                     'type' => 'input',
                     'size' => 50,
                     'max' => 255
                 ]
             ],
-            'quote_link' => [
+            'tx_ucph_content_quote_link' => [
                 'exclude' => true,
-                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_link',
+                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_link',
                 'config' => [
                     'type' => 'input',
                     'renderType' => 'inputLink',
@@ -83,29 +83,29 @@ call_user_func(function ($extKey ='ucph_ce_quote', $contentType ='ucph_ce_quote'
                     'fieldControl' => [
                         'linkPopup' => [
                             'options' => [
-                                'title' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_link',
+                                'title' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_link',
                             ],
                         ],
                     ],
                     'softref' => 'typolink'
                 ]
             ],
-            'quote_alignment' => [
+            'tx_ucph_content_quote_alignment' => [
                 'exclude' => true,
-                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment',
+                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_alignment',
                 'config' => [
                     'type' => 'select',
                     'renderType' => 'selectSingle',
                     'items' => [
                         [
-                            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment_left', '', 'EXT:'.$extKey.'/Resources/Public/Icons/justify-left.svg'
+                            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_alignment_left', '', 'EXT:'.$extKey.'/Resources/Public/Icons/justify-left.svg'
                         ],
                         [
-                            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment_center',
+                            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_alignment_center',
                             'text-center', 'EXT:'.$extKey.'/Resources/Public/Icons/justify.svg'
                         ],
                         [
-                            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment_right',
+                            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_alignment_right',
                             'text-end', 'EXT:'.$extKey.'/Resources/Public/Icons/justify-right.svg'
                         ]
                     ],
