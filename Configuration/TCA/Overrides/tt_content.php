@@ -36,7 +36,7 @@ call_user_func(function ($extKey ='ucph_content_quote', $contentType ='ucph_cont
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-                header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
                 tx_ucph_content_quote_link;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_link,
                 tx_ucph_content_quote_source;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_tx_ucph_content_quote_source,
                 bodytext;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_quote_text,
