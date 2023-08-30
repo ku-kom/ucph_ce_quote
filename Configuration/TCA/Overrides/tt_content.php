@@ -54,7 +54,19 @@ call_user_func(function ($extKey ='ucph_content_quote', $contentType ='ucph_cont
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
                 rowDescription,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-         ',
+            ',
+            'columnsOverrides' => [
+            'bodytext' => [
+                'config' => [
+                    'enableRichtext' => false,
+                    'cols' => 30,
+                    'rows' => 10,
+                    'max' => 500,
+                    'placeholder' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_quote_placeholder',
+                    'eval' => 'trim'
+                ],
+            ],
+        ],
         ]
     );
 

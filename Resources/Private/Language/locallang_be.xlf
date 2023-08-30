@@ -24,6 +24,9 @@
         <trans-unit id="ucph_content_quote_text">
             <source>Quote text</source>
         </trans-unit>
+        <trans-unit id="ucph_content_quote_placeholder">
+            <source>Enter quote...</source>
+        </trans-unit>
         <trans-unit id="ucph_content_tx_ucph_content_quote_alignment">
             <source>Quote alignment</source>
         </trans-unit>
